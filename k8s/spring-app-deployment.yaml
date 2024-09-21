@@ -14,18 +14,18 @@ spec:
     spec:
       containers:
         - name: spring-argocd-app
-          image: pdingle93/spring-web-image:latest #viju2008/my-app-image:main-84ab7306b169607a92248fa8a679ebc1314deaca
+          image: viju2008/springbootapp:main-75648a1cc78889b3e7a9743f9612ed779dce5fff #viju2008/my-app-image:main-84ab7306b169607a92248fa8a679ebc1314deaca
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
-#          env:
-#            - name: SECRET_USERNAME
-#              valueFrom:
-#                secretKeyRef:
-#                  name: mysecret
-#                  key: username
-#            - name: SECRET_PASSWORD
-#              valueFrom:
-#                secretKeyRef:
-#                  name: mysecret
-#                  key: password
+              #          env:
+              #            - name: SECRET_USERNAME
+              #              valueFrom:
+              #                secretKeyRef:
+              #                  name: mysecret
+              #                  key: username
+              #            - name: SECRET_PASSWORD
+              #              valueFrom:
+              #                secretKeyRef:
+              #                  name: mysecret
+              #                  key: password
