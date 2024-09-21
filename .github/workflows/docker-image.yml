@@ -30,7 +30,6 @@ jobs:
       - name: Push Docker image to Docker Hub
         run: |
           echo ${{ secrets.DOCKERHUB_PASSWORD }} | docker login --username viju2008 --password-stdin
-          echo ${{ secrets.DOCKERHUB_PASSWORD }}
           docker push viju2008/springbootapp:$GITHUB_REF_NAME-$GITHUB_SHA
       - name: Update manifest file
         run: |    
