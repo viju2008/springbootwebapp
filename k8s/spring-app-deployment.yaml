@@ -18,14 +18,3 @@ spec:
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
-          env:
-            - name: SECRET_USERNAME
-              valueFrom:
-                secretKeyRef:
-                  name: mysecret
-                  key: username
-            - name: SECRET_PASSWORD
-              valueFrom:
-                secretKeyRef:
-                  name: mysecret
-                  key: password
