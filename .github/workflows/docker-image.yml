@@ -31,6 +31,7 @@ jobs:
         run: |
           echo ${{ secrets.DOCKERHUB_PASSWORD }} | docker login --username viju2008 --password-stdin
           docker push viju2008/springbootapp:$GITHUB_REF_NAME-$GITHUB_SHA
+          echo "Pushed"
       - name: Update manifest file
         run: |    
           # Assuming you have a manifest file named k8s.yaml
