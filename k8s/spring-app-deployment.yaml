@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: spring-argocd-app
-          image: viju2008/springbootapp:main-75648a1cc78889b3e7a9743f9612ed779dce5fff #viju2008/my-app-image:main-84ab7306b169607a92248fa8a679ebc1314deaca
+          image: viju2008/springbootapp:main-dcb541626b4a98ce5ab6c78ede55ef2c6f83a06a #viju2008/my-app-image:main-84ab7306b169607a92248fa8a679ebc1314deaca
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
@@ -29,4 +29,3 @@ spec:
                 secretKeyRef:
                   name: mysecret
                   key: password
-
